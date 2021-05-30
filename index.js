@@ -77,3 +77,30 @@ console.log(users);
 
 let rev = s => [...s].reverse().join('');
 console.log(rev("Rubèn"));
+
+/** Exercici 5: Modificar la funció a() per reemplaçar per asnyc/await **/
+
+// function b() {
+//     // tasques asíncrones , que triguen una estona..
+// }
+ 
+// function a() {
+//     // Ens esperem que la funció b acabi
+//     b().then() => {
+//           doMoreWork();
+//     }
+// }
+
+async function a() {
+    let b = await new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let expected = true;
+            if (expected) resolve("Acabades tasques asíncrones!");
+            else reject(new Error("Fallada en asincronia!"));
+        }, 1000);
+    });
+
+    return b;
+}
+
+a().then(result => console.log(`${result} Continuem!`), error => console.log(`${error}`));
