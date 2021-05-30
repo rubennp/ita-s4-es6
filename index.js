@@ -134,3 +134,26 @@ console.log(nameTasks);
 // amb .map()
 nameTasks = tasks.map(task => task.name);
 console.log(nameTasks);
+
+/*
+ * NIVELL 2
+ */
+
+/** Exercici 7: programa en ES6 amb almenys una funció, que demani a l'usuari dos nombres
+ *              de l'1 al 10 (amb prompt suficient) i mostri per consola la taula de mul-
+ *              tiplicar del primer fins al segon
+ */
+
+const num = quin => {
+    let n;
+    
+    do {
+        n = parseInt(prompt(`Si us plau, introdueix un ${quin} número de l'1 al 10:`, 0));
+    } while(isNaN(n) || n < 1 || n > 10);
+
+    return n;
+};
+
+let n1 = num("1r"), n2 = num("2n");
+
+for (let t = 1; t <= n2; t++) console.log(`${n1} x ${t} = ${n1*t}`);
