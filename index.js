@@ -64,3 +64,10 @@ console.log(greet("Rubèn"));
 
 users = users.map(user => user.firstName);
 console.log(users);
+
+/** Exercici 3: donat el següent array de strings mostrar per consola la frase completa
+ **             usant .reduce() **/
+
+ let epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+
+ console.log(epic.reduce((p, f) => `${p} ${f}`));
