@@ -104,3 +104,33 @@ async function a() {
 }
 
 a().then(result => console.log(`${result} Continuem!`), error => console.log(`${error}`));
+
+/** Exercici 6: Tenim un array de tasques i volem aconseguir un array que contingui únicament els noms de les tasques. 
+ **             NOTA: - Usar .forEach() per obtenir aquest array.
+ **                   - Usar .map() per obtenir aquest array.
+ **/
+
+const tasks = [
+{
+   'name' : 'Start React web',
+   'duration' : 120
+},
+{
+   'name' : 'Work out',
+   'duration' : 60
+},
+{
+   'name' : 'Procrastinate on facebook',
+   'duration' : 240
+}
+];
+
+let nameTasks = [];
+
+// amb .forEach()
+tasks.forEach(task => nameTasks.push(task.name));
+console.log(nameTasks);
+
+// amb .map()
+nameTasks = tasks.map(task => task.name);
+console.log(nameTasks);
