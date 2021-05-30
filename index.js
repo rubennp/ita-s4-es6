@@ -48,3 +48,19 @@ console.log(power(3,2));
 
 const greet = who => `Hello ${who}`;
 console.log(greet("Rubèn"));
+
+/** Exercici 2: arregla l'error del següent bloc de codi */
+
+// users.map(function (user) {
+//     user.firstName;
+// });
+ 
+ let users = 
+ [{ firstName: 'Homer', lastName: 'Simpson' },
+ { firstName: 'Marge', lastName: 'Simpson' },
+ { firstName: 'Bart', lastName: 'Simpson' },
+ { firstName: 'Lisa', lastName: 'Simpson' },
+ { firstName: 'Maggie', lastName: 'Simpson' }];
+
+users = users.map(user => user.firstName);
+console.log(users);
