@@ -71,3 +71,9 @@ console.log(users);
  let epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
 
  console.log(epic.reduce((p, f) => `${p} ${f}`));
+
+/** Exercici 4: Crear una funció que accepti string i retorni revertit. NOTA: usar arrow function,
+ *  spread operator i .reverse() **/
+
+let rev = s => [...s].reverse().join('');
+console.log(rev("Rubèn"));
