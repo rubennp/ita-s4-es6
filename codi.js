@@ -157,3 +157,8 @@ const num = quin => {
 let n1 = num("1r"), n2 = num("2n");
 
 for (let t = 1; t <= n2; t++) console.log(`${n1} x ${t} = ${n1*t}`);
+
+/** Exercici 8: modificar l'exercici anterior perquè demani dades a través formulari i 
+ *              mostri el resultat en taula **/
+
+// -> a 8i9.html
