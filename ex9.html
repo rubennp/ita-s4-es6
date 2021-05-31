@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Academy. Sprint 4: ES6">
+    <meta name="keywords" content="Javascript, ES6">
+    <meta name="author" content="Rubèn Nieto Perarnau">
+    <title>IT Academy - S4: ES6</title>
+
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+        li:hover { 
+            font-weight: bold; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container p-5">
+        <div class="row">
+            <div class="mb-3">
+                <p class="lead fs-3 m-0 text-center">Cerca Usuaris:</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <form id="formNoms" class="col-12 col-md-10 col-lg-7 col-xl-6 m-0" autocomplete="off" novalidate>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-type"></i></span>
+                    <input type="text" class="form-control" id="search" name="search" placeholder="Cerca nom..." onkeyup="filtraNoms(this)">
+                    <button id="submitButton" class="btn btn-primary" type="button" disabled><i class="bi bi-search"></i></button>
+                </div>
+                <ul id="llista" class="list-group">
+                </ul>
+            </form>
+        </div>
+    </main>
+    <script src="ex9.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
