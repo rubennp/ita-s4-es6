@@ -134,3 +134,26 @@ console.log(nameTasks);
 // amb .map()
 nameTasks = tasks.map(task => task.name);
 console.log(nameTasks);
+
+/*
+ * NIVELL 2
+ */
+
+/**
+ *  Exercici 7
+ */
+
+let num = (o) => {
+    let input;
+
+    do {
+        input = parseInt(prompt(`Introdueix un ${o} número de l'1 al 10:`));
+    } while (input < 1 || input > 10);
+
+    return input;
+};
+
+let n1 = num("1r"), n2 = num("2n");
+
+for (let i = 1; i <= n2; i++) console.log(`${n1} X ${i} = ${n1*i}`);
+
